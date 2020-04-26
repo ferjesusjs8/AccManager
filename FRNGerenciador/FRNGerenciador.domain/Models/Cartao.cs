@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace FRNGerenciador.domain.Models
 {
@@ -10,9 +11,9 @@ namespace FRNGerenciador.domain.Models
         public string FinalCartao { get; set; }
         public decimal Limite { get; set; }
         public List<Fatura> Faturas { get; set; }
-        public string Bandeira { get; set; }
-        public int QuantidadeParcelas { get; set; }
+        public Bandeira Bandeira { get; set; }
         public int Ativo { get; set; }
-        public List<Conta> Contas { get; set; }
+        public DateTime Criacao { get; set; }
+        public DateTime Atualizacao { get; set; }
     }
 }

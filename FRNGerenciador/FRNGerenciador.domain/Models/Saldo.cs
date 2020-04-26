@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using FRNGerenciador.domain.Enums;
+using System;
 
 namespace FRNGerenciador.domain.Models
 {
-    public class Debito
+    public class Saldo
     {
         public int Id { get; set; }
         public string MesAno { get; set; }
-        public string ValePagamento { get; set; }
-        public List<Conta> Contas { get; set; }
+        public ESalario Salario { get; set; }
+        public Owner Dono { get; set; }
         public decimal Valor { get; set; }
         public DateTime Criacao { get; set; }
         public DateTime Atualizacao { get; set; }
