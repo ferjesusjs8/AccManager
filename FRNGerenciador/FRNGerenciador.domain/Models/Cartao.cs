@@ -12,7 +12,7 @@ namespace FRNGerenciador.domain.Models
         public decimal Limite { get; set; }
         public List<Fatura> Faturas { get; set; }
         public Bandeira Bandeira { get; set; }
-        public int Ativo { get; set; }
+        public bool Ativo { get; set; }
         public DateTime Criacao { get; set; }
         public DateTime Atualizacao { get; set; }
     }

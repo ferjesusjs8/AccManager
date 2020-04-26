@@ -2,11 +2,12 @@
 
 namespace FRNGerenciador.domain.Models
 {
-    public class Parcela
+    public class Desconto
     {
         public int Id { get; set; }
-        public decimal Valor { get; set; }
-        public bool Ativa { get; set; }
+        public string Descricao { get; set; }
+        public double Percentual { get; set; }
+        public bool Ativo { get; set; }
         public DateTime Criacao { get; set; }
         public DateTime Atualizacao { get; set; }
     }

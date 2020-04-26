@@ -3,7 +3,8 @@
     public enum EEquivalenciaHoras
     {
         Normal = 1,
-        Sabadao = 2,
-        Domingo = 3
+        Sabado = 2,
+        Domingo = 3,
+        AdicionalNoturno = 4
     }
 }

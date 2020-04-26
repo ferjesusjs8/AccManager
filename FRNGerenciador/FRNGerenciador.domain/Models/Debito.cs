@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FRNGerenciador.domain.Enums;
+using System;
 using System.Collections.Generic;
 
 namespace FRNGerenciador.domain.Models
@@ -7,7 +8,7 @@ namespace FRNGerenciador.domain.Models
     {
         public int Id { get; set; }
         public string MesAno { get; set; }
-        public string ValePagamento { get; set; }
+        public ESalario TipoPagamento { get; set; }
         public List<Conta> Contas { get; set; }
         public decimal Valor { get; set; }
         public DateTime Criacao { get; set; }

@@ -11,7 +11,7 @@ namespace FRNGerenciador.domain.Models
         public Cartao Cartao { get; set; }
         public Owner Dono { get; set; }
         public int Ativa { get; set; }
-        public decimal Valor { get; set; }
+        public double Valor { get; set; }
         public List<Parcela> Parcelamento { get; set; }
         public DateTime Vencimento { get; set; }
         public DateTime Criacao { get; set; }
