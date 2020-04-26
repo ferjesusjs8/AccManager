@@ -10,8 +10,8 @@ namespace FRNGerenciador.domain.Models
         public decimal ValorTotal { get; set; }
         public decimal ValorParcela { get; set; }
         public int Ativa { get; set; }
-        public int IdDono { get; set; }
-        public List<int> IdCartoes { get; set; }
+        public Owner Dono { get; set; }
+        public List<Cartao> Cartoes { get; set; }
         public DateTime Vencimento { get; set; }
     }
 }

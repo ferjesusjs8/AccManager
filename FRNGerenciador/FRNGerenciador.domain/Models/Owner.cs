@@ -6,6 +6,6 @@ namespace FRNGerenciador.domain.Models
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public List<int> IdCartoes { get; set; }
+        public List<Cartao> Cartoes { get; set; }
     }
 }

@@ -7,9 +7,9 @@ namespace FRNGerenciador.domain.Models
     {
         public int Id { get; set; }
         public string MesAno { get; set; }
-        public List<int> IdContas { get; set; }
-        public int IdCartao { get; set; }
-        public int IdDono { get; set; }
+        public List<Conta> Contas { get; set; }
+        public Cartao Cartao { get; set; }
+        public Owner Dono { get; set; }
         public int Ativa { get; set; }
         public decimal Valor { get; set; }
         public DateTime Vencimento { get; set; }

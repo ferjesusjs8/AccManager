@@ -8,6 +8,6 @@ namespace FRNGerenciador.domain.Models
     {
         public int Id { get; set; }
         public string MesAno { get; set; }
-        public List<int> IdDono { get; set; }
+        public List<Owner> Dono { get; set; }
     }
 }

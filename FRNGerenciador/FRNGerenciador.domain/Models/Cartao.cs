@@ -6,13 +6,13 @@ namespace FRNGerenciador.domain.Models
     {
         public int Id { get; set; }
         public string Descricao { get; set; }
-        public int IdDono { get; set; }
+        public Owner Dono { get; set; }
         public string FinalCartao { get; set; }
         public decimal Limite { get; set; }
-        public List<int> IdFaturas { get; set; }
+        public List<Fatura> Faturas { get; set; }
         public string Bandeira { get; set; }
         public int QuantidadeParcelas { get; set; }
         public int Ativo { get; set; }
-        public List<int> IdContas { get; set; }
+        public List<Conta> Contas { get; set; }
     }
 }
