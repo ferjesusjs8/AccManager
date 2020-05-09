@@ -1,9 +1,11 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace FRNGerenciador.domain.Models
 {
     public class HorasExtras
     {
+        [Key]
         public int Id { get; set; }
         public int QuantidadePercentual20 { get; set; }
         public int QuantidadePercentual50 { get; set; }
@@ -95,7 +97,7 @@ namespace FRNGerenciador.domain.Models
             }
         }
         public string MesAno { get; set; }
-        public bool Ativas { get; set; }
+        public bool Ativo { get; set; }
         public DateTime Criacao { get; set; }
         public DateTime Atualizacao { get; set; }
     }

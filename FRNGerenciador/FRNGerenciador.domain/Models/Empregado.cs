@@ -1,25 +1,26 @@
-﻿using FRNGerenciador.domain.Enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace FRNGerenciador.domain.Models
 {
     public class Empregado
     {
+        [Key]
         public int Id { get; set; }
-        public double Salario { get; set; }
-        public string Cargo { get; set; }
+        public Salario Salario { get; set; }
+        public Cargo Cargo { get; set; }
         public string Nome { get; set; }
         public string Empresa { get; set; }
         public string Setor { get; set; }
-        public ERegimeContratacao RegimeContratacao { get; set; }
+        public int IdRegimeContratacao { get; set; }
+        public RegimeContratacao RegimeContratacao { get; set; }
         public List<Desconto> Descontos { get; set; }
-        public EEscala Escala { get; set; }
         public double ValorHora
         {
             get
             {
-                var valor = Salario / (int)Escala;
+                var valor = Salario.Valor / (int)RegimeContratacao.CargaHoraria;
                 return valor;
             }
         }

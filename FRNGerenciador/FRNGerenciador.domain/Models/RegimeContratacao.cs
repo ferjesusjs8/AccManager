@@ -3,16 +3,15 @@ using System.ComponentModel.DataAnnotations;
 
 namespace FRNGerenciador.domain.Models
 {
-    public class Saldo
+    public class RegimeContratacao
     {
         [Key]
         public int Id { get; set; }
-        public string MesAno { get; set; }
-        public Salario TipoSalario { get; set; }
-        public Pessoa Dono { get; set; }
-        public decimal Valor { get; set; }
+        public string Descricao { get; set; }
+        public float CargaHoraria { get; set; }
+        public string Tipo { get; set; }
         public bool Ativo { get; set; }
-        public DateTime Criacao { get; set; }
+        public DateTime Insercao { get; set; }
         public DateTime Atualizacao { get; set; }
     }
 }
